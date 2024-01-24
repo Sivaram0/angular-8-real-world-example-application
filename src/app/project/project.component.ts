@@ -86,6 +86,7 @@ export class ProjectComponent implements OnInit {
       this.projectService.updateProject(this.projectForm.value._id, data).subscribe(result => {
         this.load();
         this.modalRef.close();
+        // console.log()
       });
     } else {
       this.projectService.addProject(data).subscribe(result => {
